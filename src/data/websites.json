@@ -1,0 +1,163 @@
+{
+  "Depression": [
+    {
+      "name": "Mind UK",
+      "url": "https://www.mind.org.uk/",
+      "description": "Mental health awareness and depression support"
+    },
+    {
+      "name": "HelpGuide",
+      "url": "https://www.helpguide.org/",
+      "description": "Guides for depression, anxiety, and wellness"
+    },
+    {
+      "name": "Depression and Bipolar Support Alliance",
+      "url": "https://www.dbsalliance.org/",
+      "description": "Support for depression and bipolar disorder"
+    }
+  ],
+
+  "Anxiety": [
+    {
+      "name": "Anxiety and Depression Association of America",
+      "url": "https://adaa.org/",
+      "description": "Anxiety disorder education and resources"
+    },
+    {
+      "name": "Calm Clinic",
+      "url": "https://www.calmclinic.com/",
+      "description": "Anxiety coping techniques and articles"
+    },
+    {
+      "name": "Beyond Blue",
+      "url": "https://www.beyondblue.org.au/",
+      "description": "Anxiety and depression support"
+    }
+  ],
+
+  "OCD": [
+    {
+      "name": "OCD UK",
+      "url": "https://www.ocduk.org/",
+      "description": "OCD awareness and support"
+    },
+    {
+      "name": "International OCD Foundation",
+      "url": "https://iocdf.org/",
+      "description": "OCD education and treatment information"
+    },
+    {
+      "name": "NOCD",
+      "url": "https://www.treatmyocd.com/",
+      "description": "OCD therapy and support platform"
+    }
+  ],
+
+  "PTSD": [
+    {
+      "name": "PTSD UK",
+      "url": "https://www.ptsduk.org/",
+      "description": "PTSD support and awareness"
+    },
+    {
+      "name": "Sidran Institute",
+      "url": "https://sidran.org/",
+      "description": "Trauma and PTSD education"
+    },
+    {
+      "name": "National Center for PTSD",
+      "url": "https://www.ptsd.va.gov/",
+      "description": "PTSD resources and treatment information"
+    }
+  ],
+
+  "Therapy & Counseling": [
+    {
+      "name": "BetterHelp",
+      "url": "https://www.betterhelp.com/",
+      "description": "Online therapy platform"
+    },
+    {
+      "name": "Talkspace",
+      "url": "https://www.talkspace.com/",
+      "description": "Professional online counseling"
+    },
+    {
+      "name": "7 Cups",
+      "url": "https://www.7cups.com/",
+      "description": "Emotional support and therapy"
+    }
+  ],
+
+  "Self Assessment": [
+    {
+      "name": "Psych Central Tests",
+      "url": "https://psychcentral.com/quizzes",
+      "description": "Mental health self-assessment quizzes"
+    },
+    {
+      "name": "Mental Health America Screening Tools",
+      "url": "https://screening.mhanational.org/screening-tools/",
+      "description": "Online mental health tests"
+    },
+    {
+      "name": "Mind Diagnostics",
+      "url": "https://www.mind-diagnostics.org/",
+      "description": "Disorder screening tools"
+    }
+  ],
+
+  "Awareness & Education": [
+    {
+      "name": "Mental Health America",
+      "url": "https://mhanational.org/",
+      "description": "Mental health awareness and education"
+    },
+    {
+      "name": "NAMI",
+      "url": "https://www.nami.org/",
+      "description": "Mental illness awareness and support"
+    },
+    {
+      "name": "Heads Together",
+      "url": "https://www.headstogether.org.uk/",
+      "description": "Awareness campaigns and support"
+    }
+  ],
+
+  "Crisis Support & Suicide Prevention": [
+    {
+      "name": "988 Suicide & Crisis Lifeline",
+      "url": "https://988lifeline.org/",
+      "description": "Immediate crisis and suicide prevention support"
+    },
+    {
+      "name": "Samaritans",
+      "url": "https://www.samaritans.org/",
+      "description": "Emotional support and suicide prevention"
+    },
+    {
+      "name": "Befrienders Worldwide",
+      "url": "https://www.befrienders.org/",
+      "description": "Global emotional crisis support"
+    }
+  ],
+
+  "Stress Management & Wellness": [
+    {
+      "name": "Headspace",
+      "url": "https://www.headspace.com/",
+      "description": "Meditation and mindfulness"
+    },
+    {
+      "name": "Calm",
+      "url": "https://www.calm.com/",
+      "description": "Relaxation and stress reduction"
+    },
+    {
+      "name": "Mindful",
+      "url": "https://www.mindful.org/",
+      "description": "Mindfulness and stress management"
+    }
+  ]
+}

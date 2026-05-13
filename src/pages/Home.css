@@ -1,0 +1,469 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#3f5c8281;
+  color:#3e1a1a;
+}
+
+
+/* HERO */
+
+.hero{
+  height:100vh;
+  background-size:cover;
+  background-position:center;
+  transition:1s ease;
+  position:relative;
+
+  /* ✨ animation */
+  animation: heroFade 1.5s ease-in-out;
+}
+
+@keyframes heroFade {
+  from {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.overlay{
+  background:rgba(0, 0, 0, 0.776);
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+
+  /* ✨ fade in */
+  animation: overlayFade 2s ease-in-out;
+}
+
+@keyframes overlayFade {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.overlay h1{
+  font-size:6rem;
+  margin-bottom:60px;
+  color:rgba(236, 226, 226, 0.932);
+
+  /* ✨ text animation */
+  animation: slideDown 1.2s ease;
+}
+
+.overlay p{
+  font-size:1.2rem;
+  margin-bottom:50px;
+  color:#bfebcd;
+
+  animation: fadeIn 2s ease;
+}
+
+/* ✨ HERO ANIMATIONS */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* SEARCH SECTION */
+.search-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  background-image: url("https://www.ocschool.co.uk/wp-content/uploads/2025/05/498220248_1234997518423128_3830979489030856176_n-1024x576.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0;
+  transform: none;
+  transition: all 0.1s ease;
+}
+
+
+.search-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* dark overlay */
+.search-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.511);
+}
+
+/* SEARCH BOX */
+.search-box {
+  position: relative;
+  z-index: 1;
+
+  background: rgba(35, 32, 32, 0.694);
+  padding: 60px;
+  border-radius: 14px;
+  width: 35%;
+  margin-top: 170px;
+  margin-bottom: 150px;
+  margin-left: 650px;
+
+  animation: boxPop 1s ease;
+}
+
+@keyframes boxPop {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* INPUT */
+.search-box input{
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 20px;
+  background: #ffffffd9;
+  font-size: 1rem;
+  color: #1a1a1a;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.search-box input:focus{
+  transform: scale(1.02);
+}
+
+/* SEARCH OPTIONS */
+.search-options{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  margin-top:19px;
+  flex-wrap:wrap;
+}
+
+.search-options button{
+  padding:18px 120px;
+  border:none;
+  border-radius:9px;
+  cursor:pointer;
+  background:#ddd;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  transition: all 0.3s ease;
+}
+
+.search-options button:hover{
+  transform: translateY(-5px) scale(1.03);
+}
+
+.search-options .active{
+  background: linear-gradient(135deg, #ed3818, #ff416c);
+  color: white;
+}
+
+/* SEARCH BUTTON */
+.search-btn{
+  margin-top:30px;
+  padding:16px 60px;
+  border:none;
+  border-radius:7px;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color:white;
+  font-size:1rem;
+  cursor:pointer;
+
+  transition: 0.3s ease;
+  animation: pulse 2.5s infinite;
+}
+
+.search-btn:hover{
+  transform: scale(1.05);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(101, 46, 59, 0.443);
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(255, 65, 108, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 65, 108, 0);
+  }
+}
+
+/* ERROR (NOW INSIDE SEARCH BOX STYLE) */
+
+/* ERROR INSIDE SEARCH BOX */
+
+.error{
+  position: absolute;
+
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 10px 18px;
+  border-radius: 20px;
+
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  color: #fff;
+  background: rgba(12, 3, 3, 0.616);
+
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+
+  z-index: 999;
+
+  animation: errorPop 0.4s ease,
+             fadeOut 2.5s forwards;
+}
+
+/* ERROR ANIMATION */
+@keyframes errorPop {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+/* AUTO DISAPPEAR EFFECT */
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* CATEGORIES SECTION */
+
+.categories-section{
+  position:relative;
+
+  min-height:10vh;
+
+  padding:8px 60px;
+
+  background-image:url("https://img.freepik.com/free-vector/watercolor-world-mental-health-day-background_23-2149637237.jpg?semt=ais_hybrid&w=740&q=80");
+
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+
+  overflow:hidden;
+
+  /* ✨ scroll animation start state */
+  opacity:0;
+  transform:translateY(100px);
+  transition:all 0.1s ease;
+}
+
+
+/* ✨ when visible on screen */
+.categories-section.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+
+/* DARK OVERLAY */
+
+.categories-section::before{
+  content:"";
+
+  position:absolute;
+  inset:0;
+
+  background:rgba(0,0,0,0.65);
+}
+
+/* CONTENT ABOVE OVERLAY */
+
+.categories-section h2,
+.categories-grid{
+  position:relative;
+  z-index:2;
+}
+
+/* TITLE */
+
+.categories-section h2{
+  text-align:center;
+
+  margin-bottom:50px;
+
+  font-size:3rem;
+  color:white;
+
+  letter-spacing:1px;
+
+  animation:fadeIn 1s ease;
+}
+
+/* GRID */
+
+.categories-grid{
+  display:grid;
+
+  grid-template-columns:repeat(auto-fit,minmax(219px,1fr));
+
+  gap:20px;
+}
+
+/* CATEGORY CARD */
+
+.category-card{
+  background:rgba(12, 3, 3, 0.221);
+
+  border:1px solid rgb(8, 2, 2);
+
+  backdrop-filter:blur(10px);
+
+  padding:47px 25px;
+
+  border-radius:20px;
+
+  text-align:center;
+
+  font-size:1.2rem;
+  font-weight:600;
+
+  color:white;
+
+  cursor:pointer;
+
+  transition:all 0.1s ease;
+
+  box-shadow:0 8px 20px rgba(0,0,0,0.2);
+
+  /* ✨ card animation */
+  opacity:0;
+  transform:translateY(50px);
+  animation:cardSlide 1s ease forwards;
+}
+
+/* ✨ stagger effect */
+.category-card:nth-child(1){ animation-delay:0.2s; }
+.category-card:nth-child(2){ animation-delay:0.2s; }
+.category-card:nth-child(3){ animation-delay:0.2s; }
+.category-card:nth-child(4){ animation-delay:0.2s; }
+.category-card:nth-child(5){ animation-delay:0.2s; }
+.category-card:nth-child(6){ animation-delay:0.2s; }
+
+/* HOVER EFFECT */
+
+.category-card:hover{
+  transform:translateY(-10px) scale(1.03);
+
+  background:linear-gradient(135deg, #509bc9, #29325c);
+
+  box-shadow:0 15px 30px rgba(0,0,0,0.35);
+}
+
+/* ✨ CARD KEYFRAMES */
+
+@keyframes cardSlide{
+  from{
+    opacity:0;
+    transform:translateY(50px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* RESULTS */
+
+.results-section{
+  padding:60px 40px;
+}
+
+.results-section h2{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.results-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+}
+
+.website-card{
+  background:white;
+  padding:25px;
+  border-radius:16px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.website-card h3{
+  margin-bottom:15px;
+}
+
+.website-card p{
+  margin-bottom:20px;
+  color:#555;
+}
+
+.website-card a{
+  text-decoration:none;
+  color:white;
+  background:#5b7cff;
+  padding:10px 20px;
+  border-radius:10px;
+  display:inline-block;
+}
