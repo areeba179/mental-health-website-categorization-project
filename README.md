@@ -1,117 +1,95 @@
-# Mental Health Website Categorization
+# Mental Health Repository Categorization Platform
 
 ## Project Overview
 
-This project is a React-based mental health website categorization platform developed to collect, organize, and present trusted mental health resources in a structured and user-friendly way.
+This project is a React-based mental health repository categorization platform designed to collect, organize, and present open-source GitHub repositories related to mental health.
 
-The platform categorizes websites according to mental health disorders and support services such as OCD, Depression, Anxiety, Therapy & Counseling, and Suicide Prevention.
+Instead of traditional websites, this platform focuses on **GitHub repositories and developer resources** such as AI models, chatbots, detection systems, and mental health analysis tools.
 
-Users can search websites using:
+The platform categorizes repositories according to mental health conditions and support systems such as Depression, Anxiety, OCD, PTSD, Therapy Chatbots, and Stress Management tools.
 
-* Category Name
-* Website Name
-* Website URL
+Users can search repositories using:
 
-The system also includes error handling and responsive UI design for improved usability and accessibility.
+- Category Name  
+- Repository Type  
+- Keyword Search  
 
+The system includes error handling and a clean responsive UI for better usability.
+
+---
 
 # Features
 
-## Website Collection & Dataset
+## Repository Collection & Dataset
 
-* Research trusted mental health websites
-* Organize website information
-* Store categorized data using JSON
+- Collect open-source mental health-related GitHub repositories
+- Organize repositories by mental health category
+- Store categorized repository links in structured JSON format
 
 ## Categorization System
 
-* OCD Resources
-* Therapy & Counseling
-* Suicide Prevention
-* Anxiety Support
-* Depression Resources
+- Depression Detection Projects
+- Anxiety Detection Models
+- OCD Research Projects
+- PTSD Analysis Tools
+- Therapy Chatbots
+- Stress Management Systems
 
 ## UI Development
 
-* Responsive homepage
-* Hero section with dynamic images
-* Category cards
-* Dedicated category pages
+- Responsive homepage
+- Dynamic hero section
+- Category-based navigation cards
+- Dedicated category pages for each condition
 
 ## Search Functionality
 
-* Search by category
-* Search by website name
-* Search by URL
+- Search by category (e.g., depression, anxiety)
+- Search by keyword
+- Search by repository topic
 
 ## Error Handling
 
-* Empty search validation
-* Invalid URL validation
-* Invalid character handling
-* No result found messages
+- Empty search validation
+- Invalid category detection
+- No results found handling
+- Input sanitization
 
+---
 
 # Technologies Used
 
-* React.js
-* Vite
-* JavaScript
-* CSS
-* GitHub
+- React.js  
+- Vite  
+- JavaScript  
+- CSS  
+- GitHub API concepts (static repository links)
 
+---
 
 # GitHub Workflow
 
 This project uses GitHub for:
 
-* Version control
-* Team collaboration
-* Issue tracking
-* Branch management
-* Pull requests
-* Project boards
-* Milestones and labels
+- Version control
+- Repository management
+- Open-source resource collection
+- Branch-based development
+- Pull request workflow
+- Issue tracking
+
+---
 
 # Team Members
 
-* Member 1 — UI Development
-* Member 2 — Search & Error Handling
-* Member 3 — Categorization & GitHub Management
+- Member 1 — UI Development  
+- Member 2 — Search & Error Handling  
+- Member 3 — Repository Curation & GitHub Management  
 
+---
 
 # Installation
 
 ```bash
 npm install
-
-npm run dev
-```
-
-# Screenshots
-
-<img width="944" height="432" alt="image" src="https://github.com/user-attachments/assets/3f7625c7-fa8b-4282-a191-e9414dd97cda" />
-<img width="940" height="428" alt="image" src="https://github.com/user-attachments/assets/d5adb036-5174-46c2-bee6-b7365b3b3e00" />
-<img width="950" height="435" alt="image" src="https://github.com/user-attachments/assets/11ee3d5d-741f-4032-bef5-d3c57161e960" />
-
-
-# Project Structure
-
-src/
-├── data/
-├── pages/
-├── App.jsx
-└── main.jsx
-
-
-# Future Improvements
-
-* More mental health categories
-* Dark mode
-* Website rating system
-* Bookmarking favorite resources
-* Backend integration
-
----
-
->>>>>>> a33981fe2a02fb0c165ec7fe7b64e527e4ef4c47
+npm run dev*
