@@ -1,163 +1,253 @@
 {
   "Depression": [
     {
-      "name": "Mind UK",
-      "url": "https://www.mind.org.uk/",
-      "description": "Mental health awareness and depression support"
+      "name": "Depression Detection System Using Machine Learning",
+      "url": "https://github.com/SUBHADIPMAITI-DEV/Depression-Detection-System-Using-Machine-Learning",
+      "description": "Machine learning based depression detection system using social media and NLP techniques."
     },
     {
-      "name": "HelpGuide",
-      "url": "https://www.helpguide.org/",
-      "description": "Guides for depression, anxiety, and wellness"
+      "name": "Depression Mood Tracker",
+      "url": "https://github.com/maxim-eyengue/Depression-Mood-Tracker",
+      "description": "Mood tracking and depression management application with user monitoring features."
     },
     {
-      "name": "Depression and Bipolar Support Alliance",
-      "url": "https://www.dbsalliance.org/",
-      "description": "Support for depression and bipolar disorder"
+      "name": "Depression Detection Topic",
+      "url": "https://github.com/hariharitha21/Detection-of-Anxiety-and-Depression",
+      "description": "Collection of repositories related to depression detection and analysis systems."
+    },
+    {
+      "name": "Depression GitHub Topic",
+      "url": "https://github.com/ayaanzhaque/SDCNL",
+      "description": "GitHub topic page containing multiple depression-related projects and applications."
+    },
+    {
+      "name": "Mental Health Projects",
+      "url": "https://github.com/dreamingechoes/awesome-mental-health",
+      "description": "Repositories related to mental health systems including depression support tools."
     }
   ],
 
   "Anxiety": [
     {
-      "name": "Anxiety and Depression Association of America",
-      "url": "https://adaa.org/",
-      "description": "Anxiety disorder education and resources"
+      "name": "Awesome Mental Health",
+      "url": "https://github.com/theimpossibleastronaut/awesome-mentalhealth",
+      "description": "A large collection of mental health resources, apps, self-help tools, and anxiety-related support systems."
     },
     {
-      "name": "Calm Clinic",
-      "url": "https://www.calmclinic.com/",
-      "description": "Anxiety coping techniques and articles"
+      "name": "Anxiety Detection Projects",
+      "url": "https://github.com/urme-b/Sensor",
+      "description": "GitHub topic page containing multiple anxiety detection systems using AI and machine learning."
     },
     {
-      "name": "Beyond Blue",
-      "url": "https://www.beyondblue.org.au/",
-      "description": "Anxiety and depression support"
+      "name": "Mental Health Chatbot Projects",
+      "url": "https://github.com/pandeyanuradha/Chatbot-for-mental-health",
+      "description": "Repositories related to mental health and anxiety support chatbots."
+    },
+    {
+      "name": "Emotion Detection Projects",
+      "url": "https://github.com/atulapra/Emotion-detection",
+      "description": "Projects focused on detecting emotions and anxiety levels using text, speech, or facial expressions."
+    },
+    {
+      "name": "Mental Wellness Applications",
+      "url": "https://github.com/thtskaran/obvix-wellness",
+      "description": "Mental wellness and anxiety management applications with dashboards and tracking features."
     }
   ],
 
   "OCD": [
     {
-      "name": "OCD UK",
-      "url": "https://www.ocduk.org/",
-      "description": "OCD awareness and support"
+      "name": "OCD Mental Health Repository Search",
+      "url": "https://github.com/bluecube246/OCD_research",
+      "description": "Search results containing OCD and mental health related repositories."
     },
     {
-      "name": "International OCD Foundation",
-      "url": "https://iocdf.org/",
-      "description": "OCD education and treatment information"
+      "name": "Cognitive Behavioral Therapy Projects",
+      "url": "https://github.com/markwk/mindset_journaling_app",
+      "description": "CBT-based mental health applications useful for OCD treatment systems."
     },
     {
-      "name": "NOCD",
-      "url": "https://www.treatmyocd.com/",
-      "description": "OCD therapy and support platform"
+      "name": "Mental Health Assessment Systems",
+      "url": "https://github.com/JesunAhmadUshno/drawing-modality-test",
+      "description": "Assessment systems for mental health disorders including OCD evaluations."
+    },
+    {
+      "name": "Habit Tracker Applications",
+      "url": "https://github.com/iSoron/uhabits",
+      "description": "Habit tracking systems useful for OCD behavior monitoring and management."
+    },
+    {
+      "name": "Psychology App Repositories",
+      "url": "https://github.com/BlackChocolate/PsychologyHeal",
+      "description": "Repositories related to psychology and mental health applications."
     }
   ],
 
   "PTSD": [
     {
-      "name": "PTSD UK",
-      "url": "https://www.ptsduk.org/",
-      "description": "PTSD support and awareness"
+      "name": "PTSD Repository Search",
+      "url": "https://github.com/nitrotap/mental-health-check",
+      "description": "GitHub repositories related to PTSD support systems, therapy tools, and mental health applications."
     },
     {
-      "name": "Sidran Institute",
-      "url": "https://sidran.org/",
-      "description": "Trauma and PTSD education"
+      "name": "Trauma Informed Care Projects",
+      "url": "https://github.com/Hussein-albaaj/opportunities-trauma-care",
+      "description": "Projects focused on trauma-informed care and PTSD recovery systems."
     },
     {
-      "name": "National Center for PTSD",
-      "url": "https://www.ptsd.va.gov/",
-      "description": "PTSD resources and treatment information"
+      "name": "Mental Health Applications",
+      "url": "https://github.com/gohjiayi/suicidal-text-detection",
+      "description": "Mental health applications including PTSD tracking and support systems."
+    },
+    {
+      "name": "Healthcare Monitoring Systems",
+      "url": "https://github.com/khairesachin101-Rock/smart-bedsore-monitoring",
+      "description": "Healthcare systems useful for PTSD patient monitoring and management."
+    },
+    {
+      "name": "Mindfulness Applications",
+      "url": "https://github.com/meditohq/medito-app",
+      "description": "Mindfulness and meditation applications helpful for PTSD recovery and stress reduction."
     }
   ],
 
   "Therapy & Counseling": [
     {
-      "name": "BetterHelp",
-      "url": "https://www.betterhelp.com/",
-      "description": "Online therapy platform"
+      "name": "Therapy App Repository Search",
+      "url": "https://github.com/keshwans/IBM-Ready-App-for-Healthcare",
+      "description": "Repositories related to online therapy and counseling systems."
     },
     {
-      "name": "Talkspace",
-      "url": "https://www.talkspace.com/",
-      "description": "Professional online counseling"
+      "name": "Counseling Management Systems",
+      "url": "https://github.com/jsphLim/Psychological-counseling-system",
+      "description": "Applications for therapist management, counseling sessions, and appointments."
     },
     {
-      "name": "7 Cups",
-      "url": "https://www.7cups.com/",
-      "description": "Emotional support and therapy"
+      "name": "Doctor Appointment Booking Systems",
+      "url": "https://github.com/alokbuilds/MediConnect",
+      "description": "Appointment scheduling systems useful for therapy and counseling sessions."
+    },
+    {
+      "name": "Healthcare Dashboard Projects",
+      "url": "https://github.com/happysemicolon/healthcare-dashboard",
+      "description": "Healthcare dashboards for therapists, counselors, and patient management."
+    },
+    {
+      "name": "Telemedicine Projects",
+      "url": "https://github.com/opensource-emr/Telemedicine",
+      "description": "Telemedicine applications supporting online therapy and counseling services."
     }
   ],
 
   "Self Assessment": [
     {
-      "name": "Psych Central Tests",
-      "url": "https://psychcentral.com/quizzes",
-      "description": "Mental health self-assessment quizzes"
+      "name": "Mental Health Assessment Projects",
+      "url": "https://github.com/JesunAhmadUshno/drawing-modality-test",
+      "description": "Repositories related to mental health self-assessment and evaluation systems."
     },
     {
-      "name": "Mental Health America Screening Tools",
-      "url": "https://screening.mhanational.org/screening-tools/",
-      "description": "Online mental health tests"
+      "name": "Quiz Application Projects",
+      "url": "https://github.com/akashgiricse/lets-quiz",
+      "description": "Quiz and test applications useful for anxiety, depression, and OCD assessments."
     },
     {
-      "name": "Mind Diagnostics",
-      "url": "https://www.mind-diagnostics.org/",
-      "description": "Disorder screening tools"
+      "name": "Psychology Application Projects",
+      "url": "https://github.com/sssajjad007/react-native-psychology-app",
+      "description": "Repositories related to psychology and self-evaluation applications."
+    },
+    {
+      "name": "Mental Health Tracker Apps",
+      "url": "https://github.com/avocadopelvis/pandora",
+      "description": "Applications for tracking moods, emotions, and mental health conditions."
+    },
+    {
+      "name": "Stress Detection Projects",
+      "url": "https://github.com/sidmulajkar/sentiment-predictor-for-stress-detection",
+      "description": "Stress detection and monitoring systems using AI and questionnaires."
     }
   ],
 
   "Awareness & Education": [
     {
-      "name": "Mental Health America",
-      "url": "https://mhanational.org/",
-      "description": "Mental health awareness and education"
+      "name": "Mental Health Awareness Projects",
+      "url": "https://github.com/Ale1x/staystrong",
+      "description": "Applications and systems promoting mental health awareness and education."
     },
     {
-      "name": "NAMI",
-      "url": "https://www.nami.org/",
-      "description": "Mental illness awareness and support"
+      "name": "Healthcare Education Projects",
+      "url": "https://github.com/gerritcloete/internal-med-questions",
+      "description": "Educational healthcare applications including mental health learning modules."
     },
     {
-      "name": "Heads Together",
-      "url": "https://www.headstogether.org.uk/",
-      "description": "Awareness campaigns and support"
+      "name": "Educational Application Projects",
+      "url": "https://github.com/YUKII2K3/EduTrack-Student-Management-System",
+      "description": "Educational apps that can be adapted for mental health awareness systems."
+    },
+    {
+      "name": "Mental Wellness Projects",
+      "url": "https://github.com/lunzai/segi-tcs3413-mood-tracker",
+      "description": "Mental wellness systems focusing on awareness, mindfulness, and emotional education."
+    },
+    {
+      "name": "Awesome Mental Health",
+      "url": "https://github.com/theimpossibleastronaut/awesome-mentalhealth",
+      "description": "Collection of mental health resources, educational tools, and awareness applications."
     }
   ],
 
   "Crisis Support & Suicide Prevention": [
     {
-      "name": "988 Suicide & Crisis Lifeline",
-      "url": "https://988lifeline.org/",
-      "description": "Immediate crisis and suicide prevention support"
+      "name": "Suicide Prevention Projects",
+      "url": "https://github.com/NM001007/An-Attention-based-Hybrid-Suicide-Ideation-Detection",
+      "description": "Repositories focused on suicide prevention systems and emergency support."
     },
     {
-      "name": "Samaritans",
-      "url": "https://www.samaritans.org/",
-      "description": "Emotional support and suicide prevention"
+      "name": "Crisis Chatbot Projects",
+      "url": "https://github.com/topics/crisis-chatbot",
+      "description": "Crisis support chatbot systems for emotional and mental health assistance."
     },
     {
-      "name": "Befrienders Worldwide",
-      "url": "https://www.befrienders.org/",
-      "description": "Global emotional crisis support"
+      "name": "Mental Health Chatbots",
+      "url": "https://github.com/Vikranth3140/Mental-Health-Support-Chatbot",
+      "description": "Chatbot applications for emotional support and mental health counseling."
+    },
+    {
+      "name": "Suicide Detection Systems",
+      "url": "https://github.com/echen3845/Suicide-Ideation-Detection",
+      "description": "AI-based suicide risk detection and prevention applications."
+    },
+    {
+      "name": "Ceilo Mental Health Platform",
+      "url": "https://github.com/Brazer27/Ceilo-Website",
+      "description": "Mental health platform offering wellness tools, support, and counseling features."
     }
   ],
 
   "Stress Management & Wellness": [
     {
-      "name": "Headspace",
-      "url": "https://www.headspace.com/",
-      "description": "Meditation and mindfulness"
+      "name": "Stress Management Projects",
+      "url": "https://github.com/nirmalya-ghosh/SYNAPTIX",
+      "description": "Repositories related to stress management and stress relief systems."
     },
     {
-      "name": "Calm",
-      "url": "https://www.calm.com/",
-      "description": "Relaxation and stress reduction"
+      "name": "MindMetrics Stress Detection App",
+      "url": "https://github.com/Sarthak2845/MindMetrics",
+      "description": "Stress detection and monitoring system using questionnaires and analytics."
     },
     {
-      "name": "Mindful",
-      "url": "https://www.mindful.org/",
-      "description": "Mindfulness and stress management"
+      "name": "Stress Detection for IT Professionals",
+      "url": "https://github.com/suragms/STRESS-DETECTION-FOR-IT-PROFESSIONALS",
+      "description": "AI-based stress monitoring system designed for IT professionals."
+    },
+    {
+      "name": "Stress Detection Systems",
+      "url": "https://github.com/sidmulajkar/sentiment-predictor-for-stress-detection",
+      "description": "Machine learning and AI repositories focused on stress detection."
+    },
+    {
+      "name": "Mental Wellness Systems",
+      "url": "https://github.com/lunzai/segi-tcs3413-mood-tracker",
+      "description": "Applications for mental wellness, stress management, and emotional support."
     }
   ]
 }
