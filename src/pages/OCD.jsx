@@ -1,9 +1,98 @@
-import websites from "../data/websites.json";
+import { useEffect, useState } from "react";
 import "./CategoryPage.css";
 
 function OCD() {
 
-  const ocdWebsites = websites["OCD"];
+  const [ocdWebsites, setOcdWebsites] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+
+  // GITHUB TOKEN FROM .env
+  const TOKEN = import.meta.env.VITE_GITHUB_TOKEN;
+
+  useEffect(() => {
+
+    const fetchOCDRepositories = async () => {
+
+      // CACHE KEY
+      const cacheKey = "ocdRepositories";
+
+      // CHECK LOCAL STORAGE CACHE
+      const cachedRepos = localStorage.getItem(cacheKey);
+
+      if (cachedRepos) {
+
+        setOcdWebsites(JSON.parse(cachedRepos));
+        setLoading(false);
+
+        return;
+      }
+
+      try {
+
+        // ONLY ONE API REQUEST
+        const response = await fetch(
+          "https://api.github.com/search/repositories?q=mental-health+ocd&sort=stars&order=desc&per_page=12",
+          {
+            headers: {
+              Authorization: `token ${TOKEN}`
+            }
+          }
+        );
+
+        const data = await response.json();
+
+        console.log(data);
+
+        // HANDLE API ERRORS
+        if (data.message) {
+
+          setError(data.message);
+          setLoading(false);
+
+          return;
+        }
+
+        // FORMAT REPOSITORIES
+        const formattedRepos = data.items.map((repo) => ({
+          name: repo.name,
+          url: repo.html_url,
+          description:
+            repo.description ||
+            "No description available for this repository.",
+          stars: repo.stargazers_count,
+          language: repo.language || "Not specified"
+        }));
+
+        // SAVE TO CACHE
+        localStorage.setItem(
+          cacheKey,
+          JSON.stringify(formattedRepos)
+        );
+
+        setOcdWebsites(formattedRepos);
+
+      } catch (error) {
+
+        console.error(
+          "Error fetching repositories:",
+          error
+        );
+
+        setError(
+          "Failed to load repositories."
+        );
+
+      } finally {
+
+        setLoading(false);
+
+      }
+    };
+
+    fetchOCDRepositories();
+
+  }, [TOKEN]);
 
   return (
 
@@ -14,47 +103,104 @@ function OCD() {
       <div className="top-section">
 
         <h1>
-         OCD Support Platforms
+          OCD Support Platforms
         </h1>
 
         <p>
-        Discover trusted online platforms focused on understanding and overcoming obsessive-compulsive disorder.
+          Discover trusted online platforms focused
+          on understanding and overcoming
+          obsessive-compulsive disorder.
         </p>
 
       </div>
 
-      {/* CARDS */}
+      {/* LOADING */}
 
-      <div className="grid">
+      {loading ? (
 
-        {ocdWebsites.map((site, index) => (
+        <h2
+          style={{
+            color: "white",
+            textAlign: "center"
+          }}
+        >
+          Loading repositories...
+        </h2>
 
-          <div className="card" key={index}>
+      ) : error ? (
 
-            <div className="card-content">
+        <h2
+          style={{
+            color: "white",
+            textAlign: "center"
+          }}
+        >
+          {error}
+        </h2>
 
-              <h2>{site.name}</h2>
+      ) : (
 
-              <p>{site.description}</p>
+        <div className="grid">
+
+          {ocdWebsites.map((site, index) => (
+
+            <div className="card" key={index}>
+
+              <div className="card-content">
+
+                {/* REPOSITORY NAME */}
+
+                <h2>{site.name}</h2>
+
+                {/* DESCRIPTION */}
+
+                <p>{site.description}</p>
+
+                {/* LANGUAGE */}
+
+                <p
+                  style={{
+                    marginTop: "10px",
+                    color: "#90caf9",
+                    fontWeight: "bold"
+                  }}
+                >
+                  💻 {site.language}
+                </p>
+
+                {/* STARS */}
+
+                <p
+                  style={{
+                    marginTop: "10px",
+                    color: "#ffd700",
+                    fontWeight: "bold"
+                  }}
+                >
+                  ⭐ {site.stars} Stars
+                </p>
+
+              </div>
+
+              {/* BUTTON */}
+
+              <a
+                href={site.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Repository
+              </a>
 
             </div>
 
-            <a
-              href={site.url}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Visit Website
-            </a>
+          ))}
 
-          </div>
+        </div>
 
-        ))}
-
-      </div>
+      )}
 
     </div>
-
   );
 }
 
